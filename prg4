@@ -8,31 +8,21 @@ void main()
     short int e;
     unsigned int ui;
     long double ld;
-
-    // Getting inputs
     printf("\n Enter an Integer value: ");
     scanf("%d", &a);
-    
     printf("\n Enter a Float value: ");
     scanf("%f", &b);
-    
     printf("\n Enter a Character: ");
-    getchar();  // To clear the newline left by previous input
+    getchar(); 
     scanf("%c", &c);
-    
     printf("\n Enter a Double value: ");
     scanf("%lf", &d);
-    
     printf("\n Enter a Short Integer value: ");
     scanf("%hi", &e);
-    
     printf("\n Enter an Unsigned Integer value: ");
     scanf("%u", &ui);
-    
     printf("\n Enter a Long Double value: ");
     scanf("%Lf", &ld);
-
-    // Printing outputs with improved formatting
     printf("\n Integer: %d \n\n", a);
     printf(" Float: %.2f \n\n", b);
     printf(" Character: %c \n\n", c);
@@ -40,6 +30,5 @@ void main()
     printf(" Short Integer: %hi \n\n", e);
     printf(" Unsigned Integer: %u \n\n", ui);
     printf(" Long Double: %.2Lf \n", ld);
-
-    getchar(); // Wait for input to keep console window open (if using Windows)
+    getchar();
 }
