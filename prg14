@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+    int array[20], i, n, sum = 0;
+    float avg;
+    printf("\nEnter the size of the array (max 20): ");
+    scanf("%d", &n);
+    if (n > 20)
+    {
+        printf("\nArray size exceeds the allowed limit of 20 elements.\n");
+        return; // Exit the program if size is too large
+    }
+    printf("Enter the array elements one by one:\n");
+    for (i = 0; i < n; i++)
+   {
+        scanf("%d", &array[i]);
+        sum += array[i];  // Add each element to sum
+    }
+    avg = (float)sum / n;
+    printf("\nSum of %d numbers stored in the array = %d", n, sum);
+    printf("\nAverage = %f", avg);
+}
