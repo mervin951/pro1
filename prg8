@@ -1,0 +1,24 @@
+#include <stdio.h>
+void main() 
+{
+    int a, b, h, volume;
+    float area1, vol, pi = 3.14159;
+    printf("\nEnter the side of a square: ");
+    scanf("%d", &a);
+    area1 = a * a;
+    volume = a * a * a;
+    printf("\nArea of the square = %f", area1);
+    printf("\nVolume of the cube = %d", volume);
+    printf("\n\nEnter length, breadth, and height of a rectangle: ");
+    scanf("%d %d %d", &a, &b, &h);
+    area1 = a * b;
+    volume = a * b * h;
+    printf("\nArea of the rectangle = %f", area1);
+    printf("\nVolume of the rectangle = %d", volume);  
+    printf("\n\nEnter the radius of a circle: ");
+    scanf("%d", &a);
+    area1 = pi * a * a;
+    vol = (4.0/3.0) * pi * a * a * a;
+    printf("\nArea of the circle = %f", area1);
+    printf("\nVolume of the sphere = %f", vol);
+}
