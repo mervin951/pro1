@@ -1,32 +1,22 @@
 #include <stdio.h>
-
-void main() {
+void main() 
+{
     int a, b, c;
     float d;
-
-    // Read the values of two integers and perform addition, subtraction, multiplication, and division
     printf("Enter the values for a and b \n");
     scanf("%d %d", &a, &b);
-
-    // Addition
     c = a + b;
     printf("\nADDITION OF TWO NUMBERS a = %d AND b = %d IS EQUAL TO c = %d\n", a, b, c);
-
-    // Subtraction
     c = a - b;
     printf("\nSUBTRACT b = %d FROM a = %d WHICH IS EQUAL TO c = %d\n", b, a, c);
-
-    // Multiplication
     c = a * b;
     printf("\nMULTIPLICATION OF TWO NUMBERS a = %d AND b = %d IS EQUAL TO c = %d\n", a, b, c);
-
-    // Division
-    if (b != 0) {  // Check if b is not zero to avoid division by zero error
-        d = (float)a / b;  // Proper casting to float
+    if (b != 0) 
+    { 
+        d = (float)a / b;  
         printf("\nDIVIDE a = %d BY b = %d WHICH IS EQUAL TO d = %f\n", a, b, d);
-    } else {
+    } else 
+     {
         printf("\nError: Division by zero is not allowed.\n");
-    }
-
-    // No need for getch() unless you're using an old compiler like Turbo C
+     }
 }
