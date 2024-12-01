@@ -1,3 +1,5 @@
+RELATIONAL OPERATION
+
 #include <stdio.h>
 void main() 
 {
@@ -9,4 +11,17 @@ void main()
     printf("\n a < b = %d", a < b);
     printf("\n a >= b = %d", a >= b); 
     printf("\n a <= b = %d", a <= b);
+}
+
+LOGICAL OPERATION
+
+#include <stdio.h>
+void main()
+{
+    int a = 16, b = 0;
+    printf("\na = %d b = %d", a, b);
+    printf("\n a && b = %d", a && b);
+    printf("\n a || b = %d", a || b);
+    printf("\n !a = %d", !a);
+    printf("\n !b = %d", !b);
 }
